@@ -9,7 +9,17 @@ source "$HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # Plugins.
 plugins=(
+    aliases
+    colored-man-pages
+    command-not-found
+    common-aliases
+    gh
     git
+    gradle
+    jsontools
+    man
+    sudo
+    vscode
     zsh-autosuggestions
 )
 
