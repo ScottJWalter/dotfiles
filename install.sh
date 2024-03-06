@@ -1,6 +1,7 @@
 #!/bin/bash
 
-
+# Set up symlinks to linke dotfile references in ~ to actual
+# dotfiles in workspace
 create_symlinks() {
     # Get the directory in which this script lives.
     script_dir=$(dirname "$(readlink -f "$0")")
@@ -16,7 +17,6 @@ create_symlinks() {
         ln -s $script_dir/$name ~/$name
     done
 }
-
 create_symlinks
 
 # echo "Initializing conda for zsh."
@@ -27,6 +27,8 @@ FONT_DIR="$HOME/.fonts"
 git clone https://github.com/powerline/fonts.git $FONT_DIR --depth=1
 cd $FONT_DIR
 ./install.sh
+
+'$ a\export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"' /etc/profile.d/android.sh
 
 # Create a shortcut to the OhMyZSH custom folder
 ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
