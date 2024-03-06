@@ -4,7 +4,7 @@ export ZSH="${HOME}/.oh-my-zsh"
 ZSH_THEME="spaceship"
 export SPACESHIP_DIR_TRUNC=0
 
-source "$HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "$ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # Plugins.
