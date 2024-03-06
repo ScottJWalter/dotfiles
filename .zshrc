@@ -5,7 +5,10 @@ ZSH_THEME="spaceship"
 export SPACESHIP_DIR_TRUNC=0
 
 # Plugins.
-plugins=(git)
+plugins=(
+    git
+    zah-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 

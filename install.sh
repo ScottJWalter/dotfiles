@@ -19,8 +19,8 @@ create_symlinks() {
 
 create_symlinks
 
-echo "Initializing conda for zsh."
-conda init zsh
+# echo "Initializing conda for zsh."
+# conda init zsh
 
 echo "Installing fonts."
 FONT_DIR="$HOME/.fonts"
@@ -28,7 +28,11 @@ git clone https://github.com/powerline/fonts.git $FONT_DIR --depth=1
 cd $FONT_DIR
 ./install.sh
 
-echo "Setting up the Spaceship theme."
 ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
+
+echo "Adding ZSH plugins ..."
+git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
+
+echo "Setting up the Spaceship theme ..."
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
