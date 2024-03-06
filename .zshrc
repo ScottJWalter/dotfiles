@@ -17,3 +17,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Set colors for LS_COLORS.
 eval `dircolors ~/.dircolors`
+
+# Add Android SDK to PATH
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/emulator
