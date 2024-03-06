@@ -32,6 +32,7 @@ ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 
 echo "Adding ZSH plugins ..."
 git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 
 echo "Setting up the Spaceship theme ..."
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
