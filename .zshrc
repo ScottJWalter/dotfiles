@@ -7,7 +7,7 @@ export SPACESHIP_DIR_TRUNC=0
 # Plugins.
 plugins=(
     git
-    zah-autosuggestions
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
