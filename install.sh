@@ -22,11 +22,11 @@ create_symlinks
 # echo "Initializing conda for zsh."
 # conda init zsh
 
-# echo "Installing fonts."
-# FONT_DIR="$HOME/.fonts"
-# git clone https://github.com/powerline/fonts.git $FONT_DIR --depth=1
-# cd $FONT_DIR
-# ./install.sh
+echo "Installing fonts."
+FONT_DIR="$HOME/.fonts"
+git clone https://github.com/powerline/fonts.git $FONT_DIR --depth=1
+cd $FONT_DIR
+./install.sh
 
 # Create a shortcut to the OhMyZSH custom folder
 ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
