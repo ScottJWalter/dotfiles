@@ -19,46 +19,21 @@ create_symlinks() {
 }
 create_symlinks
 
-# echo "Initializing conda for zsh."
-# conda init zsh
-
 echo "Installing fonts."
 FONT_DIR="$HOME/.fonts"
 git clone https://github.com/powerline/fonts.git $FONT_DIR --depth=1
 cd $FONT_DIR
 ./install.sh
 
+# Link Android SDK into profile
 '$ a\export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"' /etc/profile.d/android.sh
 
 # Create a shortcut to the OhMyZSH custom folder
 ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 
 echo "Installing zinit ..."
-yes | bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
-
 setopt promptsubst
-
-zinit wait lucid for \
-        OMZL::git.zsh \
-    atload"unalias grv" \
-        OMZP::git
-
-PS1="READY >" # provide a simple prompt till the theme loads
-
-zinit wait'!' lucid for \
-    OMZL::prompt_info_functions.zsh \
-    OMZT::gnzh
-
-zinit wait lucid for \
-    atinit"zicompinit; zicdreplay"  \
-        zdharma-continuum/fast-syntax-highlighting \
-        OMZP::colored-man-pages \
-    atload"!_zsh_autosuggest_start" \
-        zsh-users/zsh-autosuggestions \
-    blockf \
-        zsh-users/zsh-completions \
-    as"completion" \
-        OMZP::docker/_docker
+yes | bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
 # echo "Adding ZSH syntax highlighting ..."
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
