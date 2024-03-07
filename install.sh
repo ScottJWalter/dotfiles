@@ -37,7 +37,7 @@ cd $FONT_DIR
 
 echo "Installing zinit ..."
 setopt promptsubst
-bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+bash -c " yes | $(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
 # echo "Adding ZSH syntax highlighting ..."
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
