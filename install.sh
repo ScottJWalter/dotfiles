@@ -29,7 +29,7 @@ cd $FONT_DIR
 '$ a\export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"' /etc/profile.d/android.sh
 
 # Create a shortcut to the OhMyZSH custom folder
-ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
+# ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 
 echo "Installing zinit ..."
 setopt promptsubst
