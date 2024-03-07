@@ -1,7 +1,8 @@
 #!/bin/bash
+# https://github.com/ScottJWalter/dotfiles
 
-# Set up symlinks to linke dotfile references in ~ to actual
-# dotfiles in workspace
+# Set up symlinks to linke dotfile references in ~ to actual dotfiles in workspace
+# (i.e. dotfiles present in this repo)
 create_symlinks() {
     # Get the directory in which this script lives.
     script_dir=$(dirname "$(readlink -f "$0")")
@@ -22,7 +23,7 @@ create_symlinks
 # potential fix for zinit install issues
 git config --global core.autocrlf false
 
-echo "Installing fonts."
+echo "Installing fonts ..."
 FONT_DIR="$HOME/.fonts"
 git clone https://github.com/powerline/fonts.git $FONT_DIR --depth=1
 cd $FONT_DIR
