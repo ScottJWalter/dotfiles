@@ -34,19 +34,5 @@ cd $FONT_DIR
 # Link Android SDK into profile
 '$ a\export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"' /etc/profile.d/android.sh
 
-# Create a shortcut to the OhMyZSH custom folder
-# ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
-
 echo "Installing zinit ..."
 bash -c "NO_EDIT=1 && $(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
-
-# echo "Adding ZSH syntax highlighting ..."
-# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
-# echo "Adding ZSH plugins ..."
-# git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-# git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git $ZSH_CUSTOM/plugins/fast-syntax-highlighting
-# git clone --depth=1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
-
-# echo "Setting up the Spaceship theme ..."
-# git clone --depth=1 -- https://github.com/spaceship-prompt/spaceship-prompt.git $ZSH_CUSTOM/themes/spaceship-prompt
-# ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
