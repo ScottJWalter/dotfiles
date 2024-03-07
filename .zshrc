@@ -24,8 +24,8 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/emulator
 
 # A binary Zsh module which transparently and automatically compiles sourced scripts
-# module_path+=( "${HOME}/.zinit/bin/zmodules/Src" )
-# zmodload zdharma/zplugin &>/dev/null
+module_path+=( "${HOME}/.zinit/bin/zmodules/Src" )
+zmodload zdharma/zplugin &>/dev/null
 
 # Zinit
 zinit light-mode depth=1 for \
@@ -45,9 +45,3 @@ zinit wait lucid light-mode depth=1 for \
 	atload"bindkey '^[[A' history-substring-search-up; \
 			bindkey '^[[B' history-substring-search-down" \
 		zsh-users/zsh-history-substring-search
-
-# Plugins.
-# plugins=()
-# source $ZSH/oh-my-zsh.sh
-# Set colors for LS_COLORS.
-# eval `dircolors ~/.dircolors`
