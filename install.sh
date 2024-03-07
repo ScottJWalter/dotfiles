@@ -19,6 +19,9 @@ create_symlinks() {
 }
 create_symlinks
 
+# potential fix for zinit install issues
+git config --global core.autocrlf
+
 echo "Installing fonts."
 FONT_DIR="$HOME/.fonts"
 git clone https://github.com/powerline/fonts.git $FONT_DIR --depth=1
