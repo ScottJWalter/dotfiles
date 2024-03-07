@@ -34,3 +34,6 @@ cd $FONT_DIR
 
 echo "Installing zinit ..."
 bash -c "NO_EDIT=1 && $(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+
+echo "Done!"
+exit 0
