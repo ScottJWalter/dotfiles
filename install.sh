@@ -1,8 +1,6 @@
 #!/bin/bash
 # https://github.com/ScottJWalter/dotfiles
 
-setopt promptsubst
-
 # Set up symlinks to linke dotfile references in ~ to actual dotfiles in workspace
 # (i.e. dotfiles present in this repo)
 create_symlinks() {
