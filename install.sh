@@ -38,7 +38,7 @@ cd $FONT_DIR
 # ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 
 echo "Installing zinit ..."
-bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+bash -c "NO_EDIT=1 && $(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
 # echo "Adding ZSH syntax highlighting ..."
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
