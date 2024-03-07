@@ -1,8 +1,7 @@
 export ZSH="${HOME}/.oh-my-zsh"
 
-# Theme.
-ZSH_THEME="spaceship"
-export SPACESHIP_DIR_TRUNC=0
+# Theme
+zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # source "$ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 # source "$HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
