@@ -47,5 +47,5 @@ zinit wait lucid light-mode depth=1 for \
 		zdharma-continuum/fast-syntax-highlighting \
 	zdharma-continuum/history-search-multi-word \
 	atload"bindkey '^[[A' history-substring-search-up; \
-			bindkey '^[[B' history-substring-search-down" \
-		zsh-users/zsh-history-substring-search
+		bindkey '^[[B' history-substring-search-down" \
+	zsh-users/zsh-history-substring-search
