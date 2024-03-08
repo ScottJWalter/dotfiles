@@ -23,6 +23,10 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/emulator
 
+# Alias to make it more convenient to launch into the vscode editor
+# from the command line
+alias code="code -r"
+
 # A binary Zsh module which transparently and automatically compiles sourced scripts
 module_path+=( "${HOME}/.zinit/bin/zmodules/Src" )
 zmodload zdharma/zplugin &>/dev/null
