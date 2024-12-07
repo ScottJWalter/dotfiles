@@ -30,7 +30,7 @@ cd $FONT_DIR
 ./install.sh
 
 # Link Android SDK into profile
-'$ a\export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"' /etc/profile.d/android.sh
+# '$ a\export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"' /etc/profile.d/android.sh
 
 echo "Installing zinit ..."
 bash -c "NO_EDIT=1 && $(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
